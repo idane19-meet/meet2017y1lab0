@@ -13,6 +13,8 @@ def menu():
 menu()
 
 '''
+
+###############################################################
 turtle2 = turtle.clone()
 score = 0
 turtle2.write(str(score))
@@ -286,4 +288,3 @@ good_food()
 move_player()
 create_box()
 fall()
-
