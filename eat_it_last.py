@@ -17,7 +17,7 @@ menu()
 ###############################################################
 turtle2 = turtle.clone()
 score = 0
-turtle2.write(str(score))
+turtle2.write(str(score), font=( "Aerial", 24, "normal"))
 turtle2.ht()
 turtle.penup()
 #bird = turtle.clone()
@@ -138,7 +138,7 @@ def move_player():
         print('EATEN GOOD FOOD!')
         score = score + 1
         turtle2.clear()
-        turtle2.write(str(score))
+        turtle2.write(str(score),font=("Aerial", 24, "normal"))
         good_food()
     if turtle.pos() in bad_food_pos:
         bad_food_ind = bad_food_pos.index(turtle.pos())
@@ -148,7 +148,7 @@ def move_player():
         print('EATEN BAD FOOD!')
         score = score - 1
         turtle2.clear()
-        turtle2.write(str(score))
+        turtle2.write(str(score), font=("Aerial", 24, "normal"))
         if score == -5:
             print('GAME OVER!')
             quit()
@@ -288,3 +288,4 @@ good_food()
 move_player()
 create_box()
 fall()
+
